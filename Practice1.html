@@ -7,74 +7,146 @@
     <title>Practice 1 Sinau Koding</title>
     <style>
         body{
-            background-color: #dadada
+            background-color: #292D32
         }
         h4{
             margin:80px 0px 0px 0px;
             font-family: Tahoma;
             color: #838383;
         }
-        .menu{
+        .header{
             width: 100%;
             height: 66px;
             background-color: #292D32;
+            background-blend-mode: soft-light normal;
+            background-image: linear-gradient(to bottom right, rgb(0, 0, 0), #292D32);
         }
-        .menu img{
+
+        .menukiri img{
             width: 110px;
             height: 35px;
-            margin: 15px 60px;
+            margin: 15px 117px 15px 86px;
             float: left;
         }
-        .menu ul {
+        .menukiri ul {
             list-style-type: none;
-            margin: 0;
-            padding: 9px 0px;
+            margin: 0px;
+            padding: 0px 0px;
             background-color: #292D32;
             }
 
-        .menu ul li {
+        .menukiri ul li {
             float: left;
+            margin: 10px 40px 0px 0px;
             }
 
-        .menu li a {
+        .menukiri li a {
             display: block;
             color: #D7D7D7;
             text-align: center;
-            padding: 14px 16px;
+            padding: 14px 24px;
             text-decoration: none;
             font-family: 'Tahoma';
+            letter-spacing: 0.02em;            
             }
 
-        .menu ul li a:hover {
-            background-color: #111;
+        .menukiri ul li a:hover {
+            background-color: #292D32;
             }
+
+        .menukanan{
+            float: right;
+        }
+
+        .menukanan input{
+            width: 150px;
+            height: 28px;
+            border-radius: 12px;
+            background: rgba(41, 45, 50, 1);
+            mix-blend-mode: normal;
+            box-shadow: -2px -2px 8px #474C54, 2px 2px 8px #17191C;
+            font-family: 'tahoma';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 100%;
+            /* identical to box height, or 12px */
+
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(215, 215, 215, 1);
+            margin: 17px 52px 21px 0px;
+        }
+        .konten{
+            display: flex;
+        }
+        .kontenkiri{
+            width: 569px;
+            height: 155px;
+            margin: 282px 0px 283px 97px;
+        }
+        .kontenkiri h2{
+            font-family: 'tahoma';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 34px;
+            color: #D7D7D7;
+            letter-spacing: 0.08em;
+
+        }
+        .kontenkiri p{
+            padding: 0px 76px 0px 0px;
+            font-size: 18px;
+            line-height: 24px;
+            font-family: 'tahoma';
+            font-style: normal;
+            letter-spacing: 0.02em;
+            color: #D7D7D7;
+            font-weight: 300;
+            /* or 133% */
+
+letter-spacing: 0.02em;
+        }
+
+        .kontenkanan{
+            float: right;
+        }
+        .kontenkanan img{
+            
+            width: 584px;
+            height: 584px;
+        }
+
         .footer{
             width: 100%;
             height: 66px;
             background-color: #292D32;
+            background-blend-mode: soft-light normal;
+            background-image: linear-gradient(to right, rgb(0, 0, 0), #292D32);
         }
-        .kiri{
+        .footerkiri{
             float: left;
             width: 300px;
             height: 66px;
         }
-        .kiri p{
+        .footerkiri p{
             font-family: 'Tahoma';
-            color: white;
+            color:  #D7D7D7;
             font-size: 12px;
             letter-spacing: 0.1em;
             text-transform: uppercase;
             margin: 0px 20px;
             padding: 26px 0px;;
         }
-        .kanan{
+        .footerkanan{
             width: 200px;
             height: 66px;
             float: right;
         }
-        .kanan p{
+        .footerkanan p{
             font-family: 'Tahoma';
-            color: white;
+            color: #D7D7D7;
             font-size: 12px;
             letter-spacing: 0.1em;
             text-transform: uppercase;
@@ -82,7 +154,7 @@
             padding: 26px 0px;
             float: left;
         }
-        .kanan img{
+        .footerkanan img{
             width: 30px;
             height: 30px;
             padding: 18px 0px;
@@ -90,28 +162,39 @@
     </style>
 </head>
 <body>
-    <h4>Sinau Koding Academy- Dark</h4>
     <div class="container">
-        <div class="menu">
-            <img src="../HTML CSS/Sinau Coding 1.png" alt="">
-            <ul>
-                <li><a class="active" href="#home">HOME</a></li>
-                <li><a href="#news">ABOUT</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-              </ul>
+        <div class="header">
+            <div class="menukiri">
+                <img src="../HTML CSS/Sinau Coding 1.png" alt="">
+                <ul>
+                    <li><a class="active" href="#home">HOME</a></li>
+                    <li><a href="#news">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                  </ul>
+            </div>
+            <div class="menukanan">
+                <input type="button" value="Join us" name="Join us" >
+            </div>
+            
         </div>
-    <h4>Sinau Coding Academy Dark</h4>
+        <div class="konten">
+            <div class="kontenkiri">
+                <h2>WELCOME TO SINAU KODING ACADEMY</h2>
+                <p>Sinau Koding adalah Program Pelatihan Programer dengan materi yang relevan pada kebutuhan industri saat ini. Materi yang ditawarkan diantaranya pemrograman website dan android Lihat</p>
+            </div>
+            <div class="kontenkanan">
+                <img src="../HTML CSS/flatdesign 1.png" alt="">
+            </div>
+        </div>
         <div class="footer">
-            <div class="kiri">
+            <div class="footerkiri">
                 <p>SINAU KODING ACADEMY 2021 ©</p>
             </div>
-            <div class="kanan">
+            <div class="footerkanan">
                 <p>JOIN US</p>
                 <img src="../HTML CSS/Frame 2888.png" alt="">
             </div>
         </div>
-    </div>
-    
-    
+    </div>  
 </body>
 </html>
